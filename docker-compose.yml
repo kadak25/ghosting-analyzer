@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ghosting
+      POSTGRES_USER: ghosting
+      POSTGRES_PASSWORD: ghosting
+    ports:
+      - "5432:5432"
+    volumes:
+      - ghosting_db:/var/lib/postgresql/data
+
+volumes:
+  ghosting_db:

@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ghosting
+    username: ghosting
+    password: ghosting
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+app:
+  jwt:
+    secret: "ghosting-analyzer-super-secret-key-which-must-be-at-least-64-characters-long-123456"
+    accessTokenMinutes: 10080
+
+  ai:
+    enabled: true
+    hf:
+      apiKey: ${HF_API_KEY}
+      model: "meta-llama/Llama-3.1-8B-Instruct"
