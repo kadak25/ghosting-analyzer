@@ -1,35 +1,42 @@
 # 👻 Ghosting Analyzer
 
-**Ghosting Analyzer** is an AI-powered application that helps job seekers understand  
-*why they didn’t get a response* after applying for a job.
+**Ghosting Analyzer** is an application that helps job seekers understand
+possible reasons behind job application rejections by analyzing CVs against
+job descriptions using AI-based and rule-based approaches.
 
-Upload your CV, paste a job description, analyze — and clearly see  
-**why you were likely rejected or ghosted**.
-
----
-
-## 🚀 What Does It Do?
-
-- 📄 CV + Job Description analysis
-- 🎯 Match Score (role compatibility)
-- 🤖 ATS Readability score
-- ❌ Probable rejection / ghosting reasons
-- 🛠️ Clear, actionable CV improvement suggestions
-- ✍️ Rewrite suggestions for stronger CV bullet points
-- 📊 Analysis history per user
+The project is designed not only as a functional product but also as a
+**production-oriented backend system** with a strong focus on reliability
+and supportability.
 
 ---
 
-## 🧠 AI & Analysis Logic
-
-- Uses **Hugging Face Inference API** with LLM-based reasoning
-- If AI is unavailable, automatically falls back to a **rule-based analysis engine**
-- Each analysis is generated **specifically for the given CV and job posting**
-- Results are probabilistic, not absolute (real-world hiring logic)
+## 🚀 Core Functionality
+- CV and job description analysis
+- Match score and ATS readability evaluation
+- Probable rejection / ghosting reasons
+- Actionable CV improvement suggestions
+- Analysis history per user
 
 ---
 
-## 🧱 Tech Stack
+## 🧠 Production & Support Perspective
+
+This project is built with real-world **application support and production
+operations** in mind:
+
+- External dependency handling (AI provider availability)
+- Automatic fallback to a rule-based engine when AI services fail
+- Structured logging for incident investigation
+- Secure authentication and protected endpoints
+- Containerized deployment using Docker
+- Configuration management via environment variables
+
+The system is designed to remain operational and debuggable even under
+partial failures, simulating realistic production scenarios.
+
+---
+
+## 🧱 Technical Stack
 
 ### Backend
 - Java 17
@@ -37,71 +44,20 @@ Upload your CV, paste a job description, analyze — and clearly see
 - Spring Security (JWT)
 - PostgreSQL
 - Docker
-- Hugging Face Inference API
+- External AI service integration
 
 ### Frontend
 - React
 - TypeScript
-- Custom component-based UI system
-- Dark dashboard / admin-panel style interface
-
----
-
-## 🖥️ User Flow
-
-1. User registers or logs in
-2. Uploads CV (PDF)
-3. Pastes job description
-4. Clicks **Analyze**
-5. Views detailed analysis and recommendations
-6. Reviews previous analyses in **History**
-
----
-
-## 🎯 Why This Project?
-
-Almost every job seeker experiences this:
-
-> “I applied, but no one replied.”
-
-Ghosting Analyzer answers questions like:
-- Is my CV ATS-friendly?
-- Am I underqualified or overqualified?
-- Which keywords or skills are missing?
-- What should I change before my next application?
-
-This project is **candidate-first**, not recruiter-focused.
 
 ---
 
 ## 📌 Project Status
-
-- MVP completed ✅
-- UI & UX stabilized ✅
-- AI integration active ✅
-- Open for iteration & improvements 🚧
-
----
-
-## 📷 Screenshots
-
-
-<img width="1902" height="936" alt="d256c4cf-3c5a-4ba7-be0c-b60f9831b2b2" src="https://github.com/user-attachments/assets/e5a17e89-3e9a-4b68-bcb0-5d43effcab3d" />
+- MVP completed
+- Production-ready backend structure
+- Error handling and fallback mechanisms implemented
 
 ---
 
 ## 🧑‍💻 Author
-
-**Mustafa Kadak**  
-
-
----
-
-## ⭐️ Note
-
-This is not a demo-only project.
-
-It is designed with:
-- real hiring patterns
-- ATS behavior
-- and real candidate pain points in mind.
+**Mustafa Kadak**
